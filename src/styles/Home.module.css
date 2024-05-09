@@ -1,0 +1,131 @@
+.vitImage{
+  height: calc(100vh - 70px);
+  position: relative;
+}
+
+.vitImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.vit_slogan{
+  min-width: 450px;
+  height: 80%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  border-radius: 50px;
+  background: rgba(2, 38, 129, 0.46);
+  color: white;
+  font-family: 'Segoe UI', serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 150px 80px;
+}
+
+.vit_slogan:first-child{
+  font-size: 64px;
+  line-height: 85px;
+}
+.vit_slogan:last-child{
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.topFaculty{
+  min-height: 100vh;
+  background-color: #020381;
+  color: white;
+  padding: 1.2rem;
+}
+
+.topFaculty h2{
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: 'Segoe UI', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.688rem;
+}
+
+.boxParent{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.clubSection{
+  height: 100vh;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+}
+
+.clubSection h2{
+  font-family: 'Segoe UI', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.688rem;
+  color: #020381;
+}
+
+.cscp{
+  margin-top: 30px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.carouselItem{
+  height: 100%;
+  width: 100%;
+  padding: 5vh;
+}
+
+.carouselItem iframe{
+  width: 65vw;
+  height: 70vh;
+}
+
+.cvc iframe{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .vit_slogan{
+    display: none;
+  }
+ .clubSection{
+   padding: 2rem 1rem;
+   height: 80vh;
+ }
+  .carouselItem iframe{
+    width: 90vw;
+    height: 60vh;
+  }
+  .cscp{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .carouselParent :last-child :first-child{
+    background-image: url("/_next/static/media/rightArrow.44415282.png");
+  }
+
+  .carouselParent :nth-last-child(2) :first-child{
+    background-image: url("/_next/static/media/left-arrow.bc81f0c9.png");
+  }
+
+  .vitImage{
+    height: calc(70vh - 70px);
+  }
+
+  .carouselItem{
+    padding: 1px;
+  }
+}
